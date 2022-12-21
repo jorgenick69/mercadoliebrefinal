@@ -1,0 +1,368 @@
+:root {
+    /*******PaletaCromatica********/
+    --amarillo: #eac926;
+    --azul: #03264c;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    /*******TamañoTextos********/
+    --t-cuerpoTexto: 12px;
+    --t-titulares: 24px;
+    --t-precios: 18px;
+    --t-descuentos: 16px;
+    --t-descripciones: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Rotobo', sans-serif;
+    background-color: var(--gris-claro);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100vw;
+    background-color: var(--amarillo);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.logo-principal {
+    max-width: 200px;
+}
+
+header nav {
+    font-size: var(--t-cuerpoTexto);
+}
+
+main {
+    width: 90%;
+}
+
+
+
+header nav ul li {
+    list-style: none;
+
+}
+
+.lista-navegacion {
+    display: none;
+
+}
+
+.lista-navegacion li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+div.burger-menu i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    margin: 10px 0 20px 0px;
+    padding: 10px;
+}
+
+.banner-promos {
+    width: 100%;
+}
+
+.banner-promos img {
+    width: 100%;
+}
+
+.titulo-articulos {
+    font-size: var(--t-titulares);
+}
+
+#precios {
+    font-size: var(--t-precios);
+}
+
+#descuentos {
+    font-size: var(--t-descuentos);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 2em;
+    background-color: white;
+    padding-top: 2em;
+}
+
+footer section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+}
+
+.footer-articulo {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.footer-articulo i {
+    font-size: 2em;
+    color: var(--celeste);
+}
+
+.footer-articulo p {
+    font-size: var(--t-descripciones);
+
+}
+
+.footer-articulo h3 {
+    font-size: var(--t-titulares);
+
+}
+
+.copyrigth {
+    margin-top: 1em;
+}
+
+article {
+    overflow: hidden;
+}
+
+.lista-de-articulos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lista-de-articulos img {
+    width: 100%;
+
+}
+
+.datos-producto {
+    border-top: 1px solid var(--gris-claro);
+    padding: 15px;
+    position: relative;
+
+}
+.div-camion{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    position: absolute;
+    top: -12.5px;
+    right: 20px;
+    
+}
+.camion {
+    color: var(--verde);
+  font-size: 15px;
+}
+
+.producto-item {
+    background-color: white;
+
+}
+
+.precio {
+    font-weight: 600;
+    display: inline;
+}
+
+.descuento {
+    color: var(--verde);
+    display: inline;
+    margin-left: 1em;
+}
+
+.descripcion {
+    display: none;
+}
+
+
+.header-superior{
+    width: 100%;
+    display: flex;
+}
+header img{
+    width: 50%;
+}
+.buscador {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  
+}
+.compra-cuotas{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.buscador form{
+   width: 90%;
+  
+}
+.buscador form input{
+   width: 100%;
+  
+}
+
+@media(min-width:361px) {
+    .descripcion {
+        display: block;
+    }
+
+    .producto-item {
+
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+    .lista-navegacion {
+        display: block;
+    }
+    .burger-menu{
+        display:none;
+    }
+    .logo-principal{
+        width: 33%;
+      }
+        .buscador {
+           width:42%;
+         
+          
+        }
+        .compra-cuotas{
+            width: 42%;
+        }
+        header nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 3em;
+            padding-right: 3em;
+        }
+        .lista-navegacion{
+           
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .lista-de-articulos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .lista-de-articulos h3{
+          
+            width: 100%;
+        }
+        .lista-de-articulos article{ 
+            width: calc(100% /2.2);
+        }
+
+}
+
+@media(min-width:769px) {
+    .descripcion {
+        display: block;
+    }
+
+    .producto-item {
+
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+    .lista-navegacion {
+        display: block;
+    }
+    .burger-menu{
+        display:none;
+    }
+  .logo-principal{
+    width: 360px;
+  }
+    .buscador {
+        width: calc((100% -360px) / 1,9)
+     
+      
+    }
+    .compra-cuotas{
+        width: calc((100% -360px) / 1,9)
+    }
+    header nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .lista-navegacion{
+       
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+.lista-de-articulos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.lista-de-articulos h3{
+  
+    width: 100%;
+}
+.lista-de-articulos article{ 
+    width: calc(100% /4.2);
+}
+
+}
